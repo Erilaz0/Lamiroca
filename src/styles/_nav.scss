@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+  nav {
+    display: flex;
+    z-index: 2;
+    height: 70px;
+    background-color: rgb(222, 82, 82);
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    .logo {
+      height: 30px;
+      width: 130px;
+      filter: invert(1) brightness(2);
+    }
+    .ul_comp {
+      display: flex;
+      gap: 30px;
+      li {
+        list-style: none;
+        a {
+          font-size: 15px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+    .ul_resp {
+      display: none;
+    }
+    .bars {
+      display: none;
+      filter: invert(100%);
+    }
+    .cart_cont {
+      display: flex;
+      img {
+        filter: invert(1) brightness(2);
+      }
+
+      a {
+        transform: translateX(-30px);
+      }
+      p {
+        transform: translateY(10px) translateX(-18px);
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 3px;
+        border-radius: 100%;
+        font-size: 12px;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    nav {
+      .ul_comp {
+        display: none;
+      }
+      .ul_resp {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        li {
+          list-style: none;
+          padding: 8px;
+          background-color: rgb(222, 82, 82);
+
+          a {
+            color: rgb(244, 244, 244);
+          }
+        }
+        li:hover {
+          background-color: rgb(225, 141, 124);
+        }
+      }
+      .bars {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    nav {
+      .bars {
+        margin-left: -80px;
+      }
+    }
+  }
+}

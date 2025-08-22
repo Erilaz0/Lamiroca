@@ -1,0 +1,116 @@
+.cart {
+  .cart_container {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-top: 1px solid #00000025;
+    min-height: 300px;
+    .cart_item {
+      width: 90%;
+      padding-top: 5px;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #00000025;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .data_cont {
+        display: flex;
+        gap: 10px;
+        .data {
+          width: 250px;
+          h3 {
+            margin: 0;
+          }
+          .p {
+          }
+          .price {
+          }
+        }
+      }
+      .delete_img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5%;
+      }
+    }
+    .options {
+      margin-top: -10px;
+      height: 50px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: aliceblue;
+      .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-30px);
+        gap: 20px;
+        button {
+          background-color: rgb(73, 241, 76);
+          padding: 8px;
+          border: 0px;
+          color: rgb(255, 255, 255);
+        }
+        img {
+          background-color: rgb(44, 236, 210);
+          padding: 3px;
+          filter: invert(1);
+        }
+      }
+      p {
+        margin-left: 20px;
+      }
+    }
+  }
+  .intermedium_section {
+    margin-top: 150px;
+    background-image: url("/ant.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: aliceblue;
+      font-size: 20px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+    button {
+      padding: 8px;
+      color: aliceblue;
+      border-radius: 3px;
+      border: 0px;
+      background-color: rgb(254, 82, 82);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cart {
+    .cart_container {
+      .cart_item {
+        .data_cont {
+          .data {
+            width: fit-content;
+          }
+        }
+        img {
+        }
+      }
+    }
+  }
+}
