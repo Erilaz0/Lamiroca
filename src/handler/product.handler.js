@@ -1,5 +1,5 @@
-const host = "http://localhost:3000";
-//const host = "https://lamiroca.vercel.app";
+//const host = "http://localhost:3000";
+const host = "https://lamiroca.vercel.app";
 
 class ProductHandler {
   constructor() {}
